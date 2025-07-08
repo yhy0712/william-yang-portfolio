@@ -22,10 +22,10 @@ const Contact = () => {
                 <h3 className="text-xl font-medium text-white">Email</h3>
               </div>
               <a 
-                href="mailto:williamhy.yang@mail.utoronto.ca"
+                href="mailto:williamyang0712@outlook.com"
                 className="text-gray-300 hover:text-white transition-colors"
               >
-                williamhy.yang@mail.utoronto.ca
+                williamyang0712@outlook.com
               </a>
             </div>
 
@@ -35,12 +35,12 @@ const Contact = () => {
                 <h3 className="text-xl font-medium text-white">LinkedIn</h3>
               </div>
               <a 
-                href="https://linkedin.com/in/williamyang"
+                href="https://www.linkedin.com/in/yang0712"
                 className="text-gray-300 hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                linkedin.com/in/williamyang
+                linkedin.com/in/yang0712
               </a>
             </div>
 
@@ -89,7 +89,7 @@ const Contact = () => {
             
             <div className="mt-8 pt-6 border-t border-white/10">
               <p className="text-gray-400 text-sm leading-relaxed">
-                Currently completing my Bachelor's degree and actively seeking opportunities to apply my expertise in machine learning and data analysis to solve real-world challenges.
+                Recent graduate pursuing Master's in Management Analytics, actively seeking opportunities to apply expertise in machine learning and data analysis.
               </p>
             </div>
           </div>

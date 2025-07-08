@@ -4,49 +4,29 @@ const Projects = () => {
     {
       title: "Statistical Methods for Machine Learning",
       period: "Summer 2024",
-      description: "Comprehensive machine learning analysis using R with advanced statistical validation techniques including logistic regression, classification trees, and ensemble methods.",
+      description: "Comprehensive machine learning analysis using R with advanced statistical validation techniques.",
       tech: ["R", "XGBoost", "Random Forest", "Data Visualization"],
-      highlights: [
-        "Implemented various modeling techniques",
-        "Optimized model parameters and performance",
-        "Enhanced prediction analytics for error rate analysis"
-      ],
       color: "from-blue-500/20 to-purple-500/20"
     },
     {
       title: "Used Vehicle Turnover Period Prediction",
       period: "Fall 2023",
-      description: "Multi-linear regression project analyzing 38,000 observations to construct predictive models for vehicle dealer optimization and cost reduction.",
-      tech: ["R", "Multi-Linear Regression", "Data Filtering", "Statistical Analysis"],
-      highlights: [
-        "Processed 38,000+ vehicle observations",
-        "Applied Bayesian Information Criterion (BIC)",
-        "Identified key factors affecting vehicle turnover"
-      ],
+      description: "Multi-linear regression project analyzing 38,000 observations for vehicle dealer optimization.",
+      tech: ["R", "Multi-Linear Regression", "Statistical Analysis"],
       color: "from-green-500/20 to-cyan-500/20"
     },
     {
       title: "Customer Preference Analysis",
       period: "Winter 2022",
-      description: "Comprehensive analysis of customer behavior patterns using statistical methods to uncover critical insights for business decision-making.",
-      tech: ["R", "Statistical Analysis", "Data Visualization", "Hypothesis Testing"],
-      highlights: [
-        "Extracted insights from Expedia database",
-        "Applied correlation analysis and T-tests",
-        "Generated actionable business recommendations"
-      ],
+      description: "Comprehensive analysis of customer behavior patterns using statistical methods.",
+      tech: ["R", "Statistical Analysis", "Hypothesis Testing"],
       color: "from-purple-500/20 to-pink-500/20"
     },
     {
       title: "Time Series Cocoa Price Forecasting",
       period: "Winter 2024",
-      description: "Advanced forecasting model using time series analysis to predict cocoa prices with multiple external factors and machine learning enhancement.",
+      description: "Advanced forecasting model using time series analysis to predict cocoa prices.",
       tech: ["ARIMAX", "SARIMAX", "LSTM", "Time Series Analysis"],
-      highlights: [
-        "Integrated climate and currency data",
-        "Applied ARIMAX for trend analysis",
-        "Enhanced with LSTM networks for volatility modeling"
-      ],
       color: "from-orange-500/20 to-red-500/20"
     }
   ];
@@ -56,14 +36,17 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-light mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Projects
+            Featured Projects
           </h2>
+          <p className="text-xl text-gray-400">
+            Key projects demonstrating expertise in data science and machine learning
+          </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className={`bg-gradient-to-br ${project.color} p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300 group`}
+              className={`bg-gradient-to-br ${project.color} p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300 group cursor-pointer`}
             >
               <div className="mb-4">
                 <h3 className="text-2xl font-medium mb-2 text-white group-hover:text-blue-300 transition-colors">
@@ -75,7 +58,7 @@ const Projects = () => {
               <p className="text-gray-300 leading-relaxed mb-6">{project.description}</p>
               
               <div className="mb-6">
-                <h4 className="text-sm font-medium text-gray-400 mb-2">Technologies Used</h4>
+                <h4 className="text-sm font-medium text-gray-400 mb-2">Technologies</h4>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, idx) => (
                     <span 
@@ -88,13 +71,8 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div>
-                <h4 className="text-sm font-medium text-gray-400 mb-2">Key Achievements</h4>
-                <ul className="space-y-1">
-                  {project.highlights.map((highlight, idx) => (
-                    <li key={idx} className="text-gray-400 text-sm">• {highlight}</li>
-                  ))}
-                </ul>
+              <div className="text-blue-300 text-sm font-medium">
+                Click to view details →
               </div>
             </div>
           ))}

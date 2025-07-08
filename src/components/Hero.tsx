@@ -20,14 +20,16 @@ const Hero = () => {
           </p>
           <div className="flex space-x-6 justify-center md:justify-start">
             <a 
-              href="mailto:williamhy.yang@mail.utoronto.ca" 
+              href="mailto:williamyang0712@outlook.com" 
               className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20"
             >
               <Mail className="w-5 h-5" />
               <span>Get in Touch</span>
             </a>
             <a 
-              href="https://linkedin.com/in/williamyang" 
+              href="https://www.linkedin.com/in/yang0712" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-blue-600/20 hover:bg-blue-600/30 px-6 py-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-blue-500/30"
             >
               <Linkedin className="w-5 h-5" />
