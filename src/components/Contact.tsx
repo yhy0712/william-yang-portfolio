@@ -10,7 +10,7 @@ const Contact = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            I'm always interested in discussing new opportunities, collaborations, and innovative projects in data science and machine learning.
+            I'm always interested in discussing new opportunities, collaborations, and innovative projects in data science, machine learning, and business analysis.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-green-400" />
                 <h3 className="text-xl font-medium text-white">Location</h3>
               </div>
-              <p className="text-gray-300">Toronto, Canada</p>
+              <p className="text-gray-300">Toronto, Canada & GTA Area</p>
             </div>
 
             <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-xl border border-white/10">
@@ -71,25 +71,25 @@ const Contact = () => {
             <div className="space-y-4 text-gray-300">
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                <span>Full-time Data Science Positions</span>
+                <span>Data Scientist Positions</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                <span>Research Collaborations</span>
+                <span>Business Analyst Roles</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                <span>Machine Learning Projects</span>
+                <span>Data Analyst Opportunities</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                <span>Graduate Research Opportunities</span>
+                <span>Machine Learning Projects</span>
               </div>
             </div>
             
             <div className="mt-8 pt-6 border-t border-white/10">
               <p className="text-gray-400 text-sm leading-relaxed">
-                Recent graduate pursuing Master's in Management Analytics, actively seeking opportunities to apply expertise in machine learning and data analysis.
+                Recent graduate pursuing Master's in Management Analytics, actively seeking opportunities to apply expertise in data analysis and machine learning to business solutions.
               </p>
             </div>
           </div>

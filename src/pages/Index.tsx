@@ -53,7 +53,7 @@ const Index = () => {
         ref={parallaxRef}
         className="fixed inset-0 z-0"
         style={{
-          backgroundImage: 'url(/lovable-uploads/74ffb74e-c91a-49ba-ac51-8bda61424871.png)',
+          backgroundImage: 'url(/lovable-uploads/42c49d8e-baa8-4d05-a342-18f5535620d7.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

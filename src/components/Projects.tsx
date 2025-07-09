@@ -1,7 +1,12 @@
 
+import { useNavigate } from 'react-router-dom';
+
 const Projects = () => {
+  const navigate = useNavigate();
+  
   const projects = [
     {
+      id: 1,
       title: "Statistical Methods for Machine Learning",
       period: "Summer 2024",
       description: "Comprehensive machine learning analysis using R with advanced statistical validation techniques.",
@@ -9,6 +14,7 @@ const Projects = () => {
       color: "from-blue-500/20 to-purple-500/20"
     },
     {
+      id: 2,
       title: "Used Vehicle Turnover Period Prediction",
       period: "Fall 2023",
       description: "Multi-linear regression project analyzing 38,000 observations for vehicle dealer optimization.",
@@ -16,6 +22,7 @@ const Projects = () => {
       color: "from-green-500/20 to-cyan-500/20"
     },
     {
+      id: 3,
       title: "Customer Preference Analysis",
       period: "Winter 2022",
       description: "Comprehensive analysis of customer behavior patterns using statistical methods.",
@@ -23,6 +30,7 @@ const Projects = () => {
       color: "from-purple-500/20 to-pink-500/20"
     },
     {
+      id: 4,
       title: "Time Series Cocoa Price Forecasting",
       period: "Winter 2024",
       description: "Advanced forecasting model using time series analysis to predict cocoa prices.",
@@ -30,6 +38,10 @@ const Projects = () => {
       color: "from-orange-500/20 to-red-500/20"
     }
   ];
+
+  const handleProjectClick = (projectId: number) => {
+    navigate(`/project/${projectId}`);
+  };
 
   return (
     <section id="projects" className="py-32 px-6 bg-black/50 backdrop-blur-sm">
@@ -46,6 +58,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
+              onClick={() => handleProjectClick(project.id)}
               className={`bg-gradient-to-br ${project.color} p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300 group cursor-pointer`}
             >
               <div className="mb-4">

@@ -16,7 +16,7 @@ const Hero = () => {
             Data Scientist & Machine Learning Researcher
           </p>
           <p className="text-lg text-gray-500 mb-12 max-w-lg leading-relaxed">
-            Transforming complex data into actionable insights through advanced analytics and artificial intelligence
+            Applying advanced data analysis and machine learning techniques to business analysis and decision-making
           </p>
           <div className="flex space-x-6 justify-center md:justify-start">
             <a 

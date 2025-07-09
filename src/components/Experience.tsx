@@ -1,58 +1,50 @@
 
+import { useNavigate } from 'react-router-dom';
+
 const Experience = () => {
+  const navigate = useNavigate();
+  
   const researchExperience = [
     {
+      id: 'research-1',
       title: "Research Assistant",
       company: "University of Toronto - Applied Psychology & Human Development",
       period: "Sep 2024 – Mar 2025",
       description: "Conducting literature review on interpretability-accuracy balance in machine learning methods.",
-      highlights: [
-        "Research on interpretable machine learning methods",
-        "Weekly progress presentations and feedback sessions",
-        "Publication anticipated for February 2025"
-      ],
       color: "from-blue-500/20 to-cyan-500/20"
     }
   ];
 
   const additionalExperience = [
     {
+      id: 'additional-1',
       title: "Tutor",
       company: "University of Toronto Tutoring Program",
       period: "Oct 2023 – Dec 2024",
       description: "Provided personalized tutoring in mathematics and statistics.",
-      highlights: [
-        "10+ hours of effective tutoring training",
-        "Advanced communication and teaching skills",
-        "Improved student exam performance"
-      ],
       color: "from-purple-500/20 to-pink-500/20"
     },
     {
+      id: 'additional-2',
       title: "Team Captain",
       company: "University of Toronto Intramural Badminton",
       period: "Sep 2023 – Nov 2023",
       description: "Led a mixed doubles badminton team, coordinating practices and managing team dynamics.",
-      highlights: [
-        "Managed team of 15 members",
-        "Organized weekly practice sessions",
-        "Enhanced team collaboration and morale"
-      ],
       color: "from-orange-500/20 to-red-500/20"
     },
     {
+      id: 'additional-3',
       title: "Volunteer Note-Taker",
       company: "University of Toronto Accessibility Services",
       period: "Sep 2023 – Apr 2024",
       description: "Supporting student accessibility by providing comprehensive lecture notes.",
-      highlights: [
-        "Enhanced course material accessibility",
-        "Regular uploads to program platform",
-        "Supported students' academic success"
-      ],
       color: "from-green-500/20 to-blue-500/20"
     }
   ];
+
+  const handleExperienceClick = (experienceId: string) => {
+    navigate(`/experience/${experienceId}`);
+  };
 
   return (
     <section id="experience" className="py-32 px-6">
@@ -78,18 +70,17 @@ const Experience = () => {
             {researchExperience.map((exp, index) => (
               <div 
                 key={index}
-                className={`bg-gradient-to-r ${exp.color} p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300`}
+                onClick={() => handleExperienceClick(exp.id)}
+                className={`bg-gradient-to-r ${exp.color} p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300 cursor-pointer group`}
               >
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="md:col-span-2">
-                    <h4 className="text-2xl font-medium mb-2 text-white">{exp.title}</h4>
+                    <h4 className="text-2xl font-medium mb-2 text-white group-hover:text-blue-300 transition-colors">{exp.title}</h4>
                     <h5 className="text-xl text-gray-300 mb-2">{exp.company}</h5>
                     <p className="text-gray-300 leading-relaxed mb-4">{exp.description}</p>
-                    <ul className="space-y-1">
-                      {exp.highlights.map((highlight, idx) => (
-                        <li key={idx} className="text-gray-400 text-sm">• {highlight}</li>
-                      ))}
-                    </ul>
+                    <div className="text-blue-300 text-sm font-medium">
+                      Click to view details →
+                    </div>
                   </div>
                   <div className="flex flex-col justify-center">
                     <div className="bg-white/10 p-4 rounded-xl text-center backdrop-blur-sm">
@@ -109,18 +100,17 @@ const Experience = () => {
             {additionalExperience.map((exp, index) => (
               <div 
                 key={index}
-                className={`bg-gradient-to-r ${exp.color} p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300`}
+                onClick={() => handleExperienceClick(exp.id)}
+                className={`bg-gradient-to-r ${exp.color} p-8 rounded-2xl border border-white/10 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300 cursor-pointer group`}
               >
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="md:col-span-2">
-                    <h4 className="text-2xl font-medium mb-2 text-white">{exp.title}</h4>
+                    <h4 className="text-2xl font-medium mb-2 text-white group-hover:text-blue-300 transition-colors">{exp.title}</h4>
                     <h5 className="text-xl text-gray-300 mb-2">{exp.company}</h5>
                     <p className="text-gray-300 leading-relaxed mb-4">{exp.description}</p>
-                    <ul className="space-y-1">
-                      {exp.highlights.map((highlight, idx) => (
-                        <li key={idx} className="text-gray-400 text-sm">• {highlight}</li>
-                      ))}
-                    </ul>
+                    <div className="text-blue-300 text-sm font-medium">
+                      Click to view details →
+                    </div>
                   </div>
                   <div className="flex flex-col justify-center">
                     <div className="bg-white/10 p-4 rounded-xl text-center backdrop-blur-sm">
