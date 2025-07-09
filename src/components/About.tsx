@@ -27,7 +27,10 @@ const About = () => {
                 className="flex items-center justify-between w-full text-left"
               >
                 <h4 className="text-xl font-medium text-white">View Full Journey</h4>
-                {showFullJourney ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                {showFullJourney ? 
+                  <ChevronUp className="w-5 h-5 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" /> : 
+                  <ChevronDown className="w-5 h-5 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
+                }
               </button>
               
               {showFullJourney && (
