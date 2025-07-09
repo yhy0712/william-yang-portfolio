@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-6 rounded-xl border border-white/10">
               <div className="flex items-center space-x-4 mb-4">
-                <Mail className="w-6 h-6 text-blue-400" />
+                <Mail className="w-6 h-6 text-blue-400 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
                 <h3 className="text-xl font-medium text-white">Email</h3>
               </div>
               <a 
@@ -31,7 +31,7 @@ const Contact = () => {
 
             <div className="bg-gradient-to-r from-blue-600/10 to-cyan-500/10 p-6 rounded-xl border border-white/10">
               <div className="flex items-center space-x-4 mb-4">
-                <Linkedin className="w-6 h-6 text-blue-400" />
+                <Linkedin className="w-6 h-6 text-blue-400 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
                 <h3 className="text-xl font-medium text-white">LinkedIn</h3>
               </div>
               <a 
@@ -46,7 +46,7 @@ const Contact = () => {
 
             <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 p-6 rounded-xl border border-white/10">
               <div className="flex items-center space-x-4 mb-4">
-                <MapPin className="w-6 h-6 text-green-400" />
+                <MapPin className="w-6 h-6 text-green-400 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
                 <h3 className="text-xl font-medium text-white">Location</h3>
               </div>
               <p className="text-gray-300">Toronto, Canada & GTA Area</p>
@@ -54,7 +54,7 @@ const Contact = () => {
 
             <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-xl border border-white/10">
               <div className="flex items-center space-x-4 mb-4">
-                <Phone className="w-6 h-6 text-purple-400" />
+                <Phone className="w-6 h-6 text-purple-400 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
                 <h3 className="text-xl font-medium text-white">Phone</h3>
               </div>
               <a 

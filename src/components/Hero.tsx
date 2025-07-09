@@ -23,7 +23,7 @@ const Hero = () => {
               href="mailto:williamyang0712@outlook.com" 
               className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20"
             >
-              <Mail className="w-5 h-5" />
+              <Mail className="w-5 h-5 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
               <span>Get in Touch</span>
             </a>
             <a 
@@ -32,7 +32,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-blue-600/20 hover:bg-blue-600/30 px-6 py-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-blue-500/30"
             >
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-5 h-5 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
               <span>LinkedIn</span>
             </a>
           </div>

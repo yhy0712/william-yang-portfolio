@@ -96,7 +96,7 @@ const ProjectDetail = () => {
             onClick={() => navigate('/')}
             className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <ArrowLeft className="w-5 h-5 transition-all duration-[400ms] ease-out hover:scale-[1.2] hover:[transform:perspective(500px)_rotateX(5deg)_rotateY(5deg)]" />
             <span>Back to Home</span>
           </button>
         </div>
