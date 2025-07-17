@@ -73,7 +73,7 @@ const About = () => {
                   <div className="mt-2">
                     <p className="text-sm text-blue-300">Recognition:</p>
                     <p className="text-sm text-gray-400">• Dean's List Scholar (2024, 2023, 2022)</p>
-                    <p className="text-sm text-gray-400">• Academic Excellence Scholarship</p>
+                    <p className="text-sm text-gray-400">• New College In-Course Scholarship</p>
                   </div>
                 </div>
               </div>
