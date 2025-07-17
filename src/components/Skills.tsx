@@ -1,9 +1,7 @@
 
 const Skills = () => {
   const technicalSkills = [
-    "R Programming",
-    "Python",
-    "SQL & Database Management",
+    "Programming Language: R studio, Python, SQL",
     "Machine Learning Algorithms",
     "Statistical Analysis & Modeling",
     "Data Visualization"
