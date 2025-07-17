@@ -9,11 +9,9 @@ const Skills = () => {
 
   const specializedKnowledge = [
     "Data Exploratory Analysis",
-    "Hypothesis Testing",
     "Model Evaluation & Validation",
     "Time Series Analysis",
-    "Predictive Analytics",
-    "Statistical Inference"
+    "Predictive Analytics"
   ];
 
   return (
