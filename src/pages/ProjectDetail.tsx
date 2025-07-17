@@ -64,7 +64,7 @@ const ProjectDetail = () => {
       ],
       methodology: "Implemented ARIMAX and SARIMAX models for traditional forecasting, and LSTM neural networks for machine learning approach. Conducted extensive model validation using walk-forward analysis and out-of-sample testing.",
       results: "LSTM model achieved lowest MAPE (12.3%) compared to ARIMAX (18.7%). Successfully identified seasonal patterns and trend components, providing valuable insights for commodity trading strategies.",
-      technologies: ["ARIMAX", "SARIMAX", "LSTM", "Python", "TensorFlow", "Time Series Analysis"],
+      technologies: ["ARIMAX", "SARIMAX", "LSTM", "R studio", "ETS Model", "Time Series Analysis"],
       skills: ["Time Series Forecasting", "Deep Learning", "Commodity Analysis", "Financial Modeling"]
     }
   };
